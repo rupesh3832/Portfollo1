@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rupesh Patil | Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #00d4ff;
+        --secondary: #007bff;
+        --text-light: #e6f1ff;
+        --text-muted: #9bb3ce;
+        --card-bg: rgba(255,255,255,0.06);
+        --border: rgba(255,255,255,0.12);
+        --accent-gradient: linear-gradient(135deg, #00d4ff, #007bff);
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #020b17, #0a1f3c);
+        color: var(--text-light);
+    }
+
+    /* Smooth fade animations */
+    .fade {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s forwards ease;
+    }
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    /* Header / Hero */
+    .hero {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .hero img {
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 3px solid var(--primary);
+        box-shadow: 0 0 25px rgba(0, 212, 255, 0.4);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .hero p {
+        color: var(--text-muted);
+        margin: 6px 0 12px;
+    }
+
+    .links a {
+        margin-right: 10px;
+        padding: 8px 14px;
+        background: var(--accent-gradient);
+        border-radius: 6px;
+        text-decoration: none;
+        color: #001623;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .links a:hover {
+        opacity: 0.85;
+        transform: translateY(-2px);
+    }
+
+    /* Section Headings */
+    h2 {
+        margin-top: 40px;
+        font-size: 26px;
+        font-weight: 700;
+        border-left: 4px solid var(--primary);
+        padding-left: 10px;
+    }
+
+    /* About Card */
+    .card {
+        background: var(--card-bg);
+        padding: 20px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        backdrop-filter: blur(8px);
+        margin-top: 15px;
+    }
+
+    /* Skills */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .skill {
+        padding: 8px 12px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 8px;
+        font-size: 14px;
+        border: 1px solid var(--border);
+    }
+
+    /* Projects */
+    .project {
+        margin-top: 15px;
+        padding: 18px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid var(--border);
+        transition: 0.3s;
+    }
+    .project:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .project-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .tech {
+        font-size: 14px;
+        color: var(--text-muted);
+        margin-top: 6px;
+    }
+
+    .btns {
+        margin-top: 12px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid var(--border);
+        transition: 0.3s;
+    }
+
+    .btn-source {
+        background: rgba(255,255,255,0.05);
+        color: var(--text-light);
+    }
+    .btn-source:hover {
+        transform: translateY(-3px);
+        background: rgba(255,255,255,0.15);
+    }
+
+    .btn-live {
+        background: var(--accent-gradient);
+        color: #002033;
+        border: none;
+        box-shadow: 0 0 15px rgba(0,212,255,0.4);
+    }
+    .btn-live:hover {
+        transform: translateY(-3px);
+        opacity: 0.9;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        color: var(--text-muted);
+        font-size: 14px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="hero fade">
+        <img src="profile_pic.jpg" height="1152" width="896"/>
+        <div>
+            <h1>Rupesh Tukaram Patil</h1>
+            <p>Data Science | Machine Learning | Python Developer</p>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/rupesh-patil-402496375" target="_blank">LinkedIn</a>
+                <a href="https://github.com/rupesh3832" target="_blank">GitHub</a>
+                <a href="mailto:rupeshpatil6921@gmail.com">Email</a>
+                <a href="Rupesh Patil 1212.docx" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <h2 class="fade">About Me</h2>
+    <div class="card fade">
+        Passionate and detail-oriented Data Science fresher with strong Python, MySQL, NumPy, Pandas, and ML fundamentals.
+        Interested in solving real-world problems using data-driven approaches and deploying ML apps.
+    </div>
+
+    <!-- SKILLS -->
+    <h2 class="fade">Skills</h2>
+    <div class="card fade">
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">scikit-learn</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Flask</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">Data Visualization</div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <h2 class="fade">Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project fade">
+        <h3 class="project-title">House Price Prediction</h3>
+        <div class="tech">Python · scikit-learn · Pandas · Flask · Deployment</div>
+        <div class="btns">
+            <a class="btn btn-source" href="https://github.com/rupesh3832/House-Price" target="_blank">Source Code</a>
+            <a class="btn btn-live" href="https://rupesh1210.pythonanywhere.com/" target="_blank">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project fade">
+        <h3 class="project-title">Loan Default Prediction</h3>
+        <div class="tech">Python · ML Models · Data Processing · Flask</div>
+        <div class="btns">
+            <a class="btn btn-source" href="https://github.com/rupesh3832/LoanDefault" target="_blank">Source Code</a>
+            <a class="btn btn-live" href="https://rupeshpatil0714.pythonanywhere.com/" target="_blank">Live Demo</a>
+        </div>
+    </div>
+
+    <footer>© 2025 Rupesh Patil — Data Science Portfolio</footer>
+
+</div>
+
+</body>
+</html>
